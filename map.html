@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
   <title>The online brochure about london</title>
@@ -17,7 +18,9 @@
       width: 100%;
       margin: auto;
     }
-
+    .footer{
+      background-color: #eee;
+    }
   </style>
 
 
@@ -67,53 +70,216 @@ var mapProp = {
 
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
+//marker 1
 var marker=new google.maps.Marker({
-  position:new google.maps.LatLng(51.5194133,-0.1291453),
+  position:new google.maps.LatLng(51.5194166,-0.1291453),
 
 });
 marker.setMap(map);
 
+var infowindow = new google.maps.InfoWindow({
+content:"British Museum"
+});
 
+
+google.maps.event.addListener(marker, 'click', function() {
+infowindow.open(map,marker);
+});
+
+
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(20);
+  map.setCenter(marker.getPosition());
+  });
+
+
+
+//marker 2
   var marker=new google.maps.Marker({
     position:new google.maps.LatLng(51.5089323,-0.1304877),
+
+  });
+  marker.setMap(map);
+
+  var infowindow = new google.maps.InfoWindow({
+  content:"National Gallery"
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map,marker);
+  });
+
+  google.maps.event.addListener(marker,'click',function() {
+    map.setZoom(20);
+    map.setCenter(marker.getPosition());
     });
 
-    var marker=new google.maps.Marker({
-      position:new google.maps.LatLng(),
-      });
 
-      var marker=new google.maps.Marker({
-        position:new google.maps.LatLng(),
-        });
+//marker 3
+var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(51.4967183,-0.1785559),
 
-        var marker=new google.maps.Marker({
-          position:new google.maps.LatLng(),
-          });
-
-          var marker=new google.maps.Marker({
-            position:new google.maps.LatLng(),
-            });
-
-            var marker=new google.maps.Marker({
-              position:new google.maps.LatLng(),
-              });
-
-              var marker=new google.maps.Marker({
-                position:new google.maps.LatLng(),
-                });
-
-                var marker=new google.maps.Marker({
-                  position:new google.maps.LatLng(),
-                  });
-
-                  var marker=new google.maps.Marker({
-                    position:new google.maps.LatLng(),
-                    });
-
-
-
+});
 marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+content:"Natural History Museum"
+});
+
+google.maps.event.addListener(marker, 'click', function() {
+infowindow.open(map,marker);
+});
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(20);
+  map.setCenter(marker.getPosition());
+  });
+
+//marker 4
+var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(51.5057831,-0.1188808),
+
+});
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+content:"Southbank Centre"
+});
+
+google.maps.event.addListener(marker, 'click', function() {
+infowindow.open(map,marker);
+});
+
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(20);
+  map.setCenter(marker.getPosition());
+  });
+
+//marker 5
+var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(51.5075986,-0.1015451),
+
+});
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+content:"Tate modern"
+});
+
+google.maps.event.addListener(marker, 'click', function() {
+infowindow.open(map,marker);
+});
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(20);
+  map.setCenter(marker.getPosition());
+  });
+
+//marker 6
+var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(51.5076501,-0.1343757),
+
+});
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+content:" Coca-Cola London Eye"
+});
+
+google.maps.event.addListener(marker, 'click', function() {
+infowindow.open(map,marker);
+});
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(20);
+  map.setCenter(marker.getPosition());
+  });
+
+//marker 7
+var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(51.5076501,-0.1343757),
+
+});
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+content:"Victoria and Albert Museum"
+});
+
+google.maps.event.addListener(marker, 'click', function() {
+infowindow.open(map,marker);
+});
+
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(20);
+  map.setCenter(marker.getPosition());
+  });
+
+//marker 8
+var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(51.4978128,-0.1767122),
+
+});
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+content:"Science Museum"
+});
+
+google.maps.event.addListener(marker, 'click', function() {
+infowindow.open(map,marker);
+});
+
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(20);
+  map.setCenter(marker.getPosition());
+  });
+
+//marker 9
+var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(51.5110623,-0.1193367),
+
+});
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+content:"Somerset House"
+});
+
+google.maps.event.addListener(marker, 'click', function() {
+infowindow.open(map,marker);
+});
+
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(20);
+  map.setCenter(marker.getPosition());
+  });
+
+//marker 10
+var marker=new google.maps.Marker({
+  position:new google.maps.LatLng(51.5081157,-0.078138),
+
+});
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+content:"Tower of London "
+});
+
+
+
+google.maps.event.addListener(marker, 'click', function() {
+infowindow.open(map,marker);
+});
+
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(20);
+  map.setCenter(marker.getPosition());
+  });
+
+
+
+
+
 }
+
 
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
