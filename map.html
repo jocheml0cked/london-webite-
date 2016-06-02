@@ -64,214 +64,214 @@ function initialize()
 {
 var mapProp = {
   center:myCenter,
-  zoom:9,
+  zoom:13,
   mapTypeId:google.maps.MapTypeId.HYBRID
   };
 
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
 //marker 1
-var marker=new google.maps.Marker({
+var markerA=new google.maps.Marker({
   position:new google.maps.LatLng(51.5194166,-0.1291453),
 
 });
-marker.setMap(map);
+markerA.setMap(map);
 
-var infowindow = new google.maps.InfoWindow({
+var infowindow1 = new google.maps.InfoWindow({
 content:"British Museum"
 });
 
 
-google.maps.event.addListener(marker, 'click', function() {
-infowindow.open(map,marker);
+google.maps.event.addListener(markerA, 'click', function() {
+infowindow1.open(map,markerA);
 });
 
 
-google.maps.event.addListener(marker,'click',function() {
+google.maps.event.addListener(markerA,'click',function() {
   map.setZoom(20);
-  map.setCenter(marker.getPosition());
+  map.setCenter(markerA.getPosition());
   });
 
 
 
 //marker 2
-  var marker=new google.maps.Marker({
+  var markerB=new google.maps.Marker({
     position:new google.maps.LatLng(51.5089323,-0.1304877),
 
   });
-  marker.setMap(map);
+  markerB.setMap(map);
 
-  var infowindow = new google.maps.InfoWindow({
+  var infowindow2 = new google.maps.InfoWindow({
   content:"National Gallery"
   });
 
-  google.maps.event.addListener(marker, 'click', function() {
-  infowindow.open(map,marker);
+  google.maps.event.addListener(markerB, 'click', function() {
+  infowindow2.open(map,markerB);
   });
 
-  google.maps.event.addListener(marker,'click',function() {
+  google.maps.event.addListener(markerB,'click',function() {
     map.setZoom(20);
-    map.setCenter(marker.getPosition());
+    map.setCenter(markerB.getPosition());
     });
 
 
 //marker 3
-var marker=new google.maps.Marker({
+var markerC=new google.maps.Marker({
   position:new google.maps.LatLng(51.4967183,-0.1785559),
 
 });
-marker.setMap(map);
+markerC.setMap(map);
 
-var infowindow = new google.maps.InfoWindow({
+var infowindow3 = new google.maps.InfoWindow({
 content:"Natural History Museum"
 });
 
-google.maps.event.addListener(marker, 'click', function() {
-infowindow.open(map,marker);
+google.maps.event.addListener(markerC, 'click', function() {
+infowindow3.open(map,markerC);
 });
-google.maps.event.addListener(marker,'click',function() {
+google.maps.event.addListener(markerC,'click',function() {
   map.setZoom(20);
-  map.setCenter(marker.getPosition());
+  map.setCenter(markerC.getPosition());
   });
 
 //marker 4
-var marker=new google.maps.Marker({
+var markerD=new google.maps.Marker({
   position:new google.maps.LatLng(51.5057831,-0.1188808),
 
 });
-marker.setMap(map);
+markerD.setMap(map);
 
-var infowindow = new google.maps.InfoWindow({
+var infowindow4 = new google.maps.InfoWindow({
 content:"Southbank Centre"
 });
 
-google.maps.event.addListener(marker, 'click', function() {
-infowindow.open(map,marker);
+google.maps.event.addListener(markerD, 'click', function() {
+infowindow4.open(map,markerD);
 });
 
-google.maps.event.addListener(marker,'click',function() {
+google.maps.event.addListener(markerD,'click',function() {
   map.setZoom(20);
-  map.setCenter(marker.getPosition());
+  map.setCenter(markerD.getPosition());
   });
 
 //marker 5
-var marker=new google.maps.Marker({
+var markerE=new google.maps.Marker({
   position:new google.maps.LatLng(51.5075986,-0.1015451),
 
 });
-marker.setMap(map);
+markerE.setMap(map);
 
-var infowindow = new google.maps.InfoWindow({
+var infowindow5 = new google.maps.InfoWindow({
 content:"Tate modern"
 });
 
-google.maps.event.addListener(marker, 'click', function() {
-infowindow.open(map,marker);
+google.maps.event.addListener(markerE, 'click', function() {
+infowindow5.open(map,markerE);
 });
-google.maps.event.addListener(marker,'click',function() {
+google.maps.event.addListener(markerE,'click',function() {
   map.setZoom(20);
-  map.setCenter(marker.getPosition());
+  map.setCenter(markerE.getPosition());
   });
 
 //marker 6
-var marker=new google.maps.Marker({
+var markerF=new google.maps.Marker({
   position:new google.maps.LatLng(51.5076501,-0.1343757),
 
 });
-marker.setMap(map);
+markerF.setMap(map);
 
-var infowindow = new google.maps.InfoWindow({
+var infowindow6 = new google.maps.InfoWindow({
 content:" Coca-Cola London Eye"
 });
 
-google.maps.event.addListener(marker, 'click', function() {
-infowindow.open(map,marker);
+google.maps.event.addListener(markerF, 'click', function() {
+infowindow6.open(map,markerF);
 });
-google.maps.event.addListener(marker,'click',function() {
+google.maps.event.addListener(markerF,'click',function() {
   map.setZoom(20);
-  map.setCenter(marker.getPosition());
+  map.setCenter(markerF.getPosition());
   });
 
 //marker 7
-var marker=new google.maps.Marker({
+var markerG=new google.maps.Marker({
   position:new google.maps.LatLng(51.5076501,-0.1343757),
 
 });
-marker.setMap(map);
+markerG.setMap(map);
 
-var infowindow = new google.maps.InfoWindow({
+var infowindow7 = new google.maps.InfoWindow({
 content:"Victoria and Albert Museum"
 });
 
-google.maps.event.addListener(marker, 'click', function() {
-infowindow.open(map,marker);
+google.maps.event.addListener(markerG, 'click', function() {
+infowindow7.open(map,markerG);
 });
 
-google.maps.event.addListener(marker,'click',function() {
+google.maps.event.addListener(markerG,'click',function() {
   map.setZoom(20);
-  map.setCenter(marker.getPosition());
+  map.setCenter(markerG.getPosition());
   });
 
 //marker 8
-var marker=new google.maps.Marker({
+var markerH=new google.maps.Marker({
   position:new google.maps.LatLng(51.4978128,-0.1767122),
 
 });
-marker.setMap(map);
+markerH.setMap(map);
 
-var infowindow = new google.maps.InfoWindow({
+var infowindow8 = new google.maps.InfoWindow({
 content:"Science Museum"
 });
 
-google.maps.event.addListener(marker, 'click', function() {
-infowindow.open(map,marker);
+google.maps.event.addListener(markerH, 'click', function() {
+infowindow8.open(map,markerH);
 });
 
-google.maps.event.addListener(marker,'click',function() {
+google.maps.event.addListener(markerH,'click',function() {
   map.setZoom(20);
-  map.setCenter(marker.getPosition());
+  map.setCenter(markerH.getPosition());
   });
 
 //marker 9
-var marker=new google.maps.Marker({
+var markerI=new google.maps.Marker({
   position:new google.maps.LatLng(51.5110623,-0.1193367),
 
 });
-marker.setMap(map);
+markerI.setMap(map);
 
-var infowindow = new google.maps.InfoWindow({
+var infowindow9 = new google.maps.InfoWindow({
 content:"Somerset House"
 });
 
-google.maps.event.addListener(marker, 'click', function() {
-infowindow.open(map,marker);
+google.maps.event.addListener(markerI, 'click', function() {
+infowindow9.open(map,markerI);
 });
 
-google.maps.event.addListener(marker,'click',function() {
+google.maps.event.addListener(markerI,'click',function() {
   map.setZoom(20);
-  map.setCenter(marker.getPosition());
+  map.setCenter(markerI.getPosition());
   });
 
 //marker 10
-var marker=new google.maps.Marker({
+var markerJ=new google.maps.Marker({
   position:new google.maps.LatLng(51.5081157,-0.078138),
 
 });
-marker.setMap(map);
+markerJ.setMap(map);
 
-var infowindow = new google.maps.InfoWindow({
+var infowindow10 = new google.maps.InfoWindow({
 content:"Tower of London "
 });
 
 
 
-google.maps.event.addListener(marker, 'click', function() {
-infowindow.open(map,marker);
+google.maps.event.addListener(markerJ, 'click', function() {
+infowindow10.open(map,markerJ);
 });
 
-google.maps.event.addListener(marker,'click',function() {
+google.maps.event.addListener(markerJ,'click',function() {
   map.setZoom(20);
-  map.setCenter(marker.getPosition());
+  map.setCenter(markerJ.getPosition());
   });
 
 
